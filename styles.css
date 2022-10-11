@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+body {
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.bg {
+  position: absolute;
+  top: -100px;
+  width: 100%;
+}
+
+.illustrationHero {
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  width: 100%;
+}
+.container {
+  position: absolute;
+  width: 420px;
+  height: 630px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 28px;
+  background: #fff;
+}
+
+.merchan {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.merchan h1 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.merchan p {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  line-height: 1.4rem;
+  opacity: 0.5;
+}
+
+.annualPlan {
+  margin-top: 30px;
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 10px;
+  background: hsl(225, 100%, 98%);
+  border-radius: 14px;
+}
+
+.dollarPrice {
+  opacity: 0.6;
+}
+
+.annualPlan a {
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding-right: 0.6rem;
+  color: hsl(245, 75%, 52%);
+}
+
+.price {
+  display: flex;
+  width: 70%;
+  max-width: 70%;
+  margin: 8px;
+}
+.price img {
+  width: 45px;
+  margin-right: 10px;
+}
+
+#bold {
+  font-weight: 700;
+}
+
+.btnPayment {
+  background: hsl(245, 75%, 52%);
+  color: white;
+  font-weight: 900;
+  border: none;
+  width: 75%;
+  max-width: 75%;
+  padding: 15px;
+  margin-top: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px hsl(224, 23%, 55%);
+  cursor: pointer;
+}
+
+.cancelOrder {
+  margin-top: 25px;
+  border: none;
+  font-weight: 700;
+  opacity: 0.8;
+  color: hsl(224, 23%, 55%);
+  background: transparent;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 90%;
+    height: 83%;
+  }
+
+  .merchan {
+    margin-top: 23px;
+  }
+
+  .merchan h1 {
+    margin-bottom: 10px;
+  }
+  .merchan p {
+    font-size: 0.9rem;
+    width: 80%;
+  }
+
+  .annualPlan {
+    margin: 20px 0px;
+    font-size: 0.9rem;
+    padding: 9px 8px;
+  }
+
+  .annualPlan a {
+    font-size: 0.8rem;
+  }
+
+  .btnPayment {
+    margin-top: 3px;
+  }
+
+  .cancelOrder {
+    font-weight: 900;
+    opacity: 1;
+  }
+
+  .btnPayment,
+  .cancelOrder {
+    font-size: 0.9rem;
+  }
+}
